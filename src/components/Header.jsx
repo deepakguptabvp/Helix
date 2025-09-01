@@ -8,7 +8,7 @@ const Header = () => {
           {/* Logo Section */}
           <div className="flex-shrink-0 flex text-left">
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-800 via-blue-500 to-blue-800 bg-clip-text text-transparent cursor-pointer">
-              Helix
+              Helix Logo
             </span>
           </div>
 
