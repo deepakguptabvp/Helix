@@ -5,7 +5,7 @@ const cardData = [
     desc: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor ",
   },
   {
-    lottie: "/lottie/partnership.json",
+    lottie: "/lottie/partnership-2.json",
     label: "Strong Partnership",
     desc: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor ",
   },

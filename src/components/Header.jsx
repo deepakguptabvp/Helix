@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="shadow-md sticky top-0 z-10  md:h-20 lg:h-18 p-1.5 bg-white">
+    <nav className="shadow-md sticky top-0 z-10 md:h-20 lg:h-18 p-1.5 bg-white w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:p-2  w-full">
         <div className="flex flex-shrink-0 items-center justify-between w-full">
           {/* Logo Section */}
           <Link to="/">
-            <div className="flex-shrink-0 flex text-left">
+            <div className="flex-shrink-0 flex text-left ml-4">
               {/* <span className="text-2xl font-bold bg-gradient-to-r from-blue-800 via-blue-500 to-blue-800 bg-clip-text text-transparent cursor-pointer">
               Helix Logo
               </span> */}
