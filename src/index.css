@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+.bg-primary {
+  background-color: #7C3437;
+}
+
+.text-primary {
+  color: #7C3437;
+}
+
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

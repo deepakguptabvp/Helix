@@ -1,21 +1,34 @@
+import { BsArrowUpRightCircle, BsArrowUpRightCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <nav className="shadow-md sticky top-0 z-10  md:h-20 lg:h-18 p-1.5 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="flex items-center justify-between w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:p-2  w-full">
+        <div className="flex flex-shrink-0 items-center justify-between w-full">
           {/* Logo Section */}
-          <div className="flex-shrink-0 flex text-left">
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-800 via-blue-500 to-blue-800 bg-clip-text text-transparent cursor-pointer">
+          <Link to="/">
+            <div className="flex-shrink-0 flex text-left">
+              {/* <span className="text-2xl font-bold bg-gradient-to-r from-blue-800 via-blue-500 to-blue-800 bg-clip-text text-transparent cursor-pointer">
               Helix Logo
-            </span>
-          </div>
+              </span> */}
+              <img
+                src="../assets/HelixLogo.png"
+                alt="Helix Logo"
+                className="h-12 cursor-pointer"
+              />
+            </div>
+          </Link>
 
           {/* Menu Items */}
           <div className="flex-1 flex justify-center">
-            <div className="hidden sm:flex sm:space-x-8 md:space-x-8 text-center">
+            <div className="hidden sm:flex sm:space-x-8 md:space-x-8 text-center font-semibold">
               {/* Product button */}
+              <Link to="/">
+                <button className="inline-flex items-center text-gray-700 hover:text-gray-900 cursor-pointer">
+                  Home
+                </button>
+              </Link>
               <Link to="/products">
                 <button className="inline-flex items-center text-gray-700 hover:text-gray-900 cursor-pointer">
                   Products
@@ -28,7 +41,7 @@ const Header = () => {
                 className="relative group gap-8 inline-flex "
               >
                 <button className="inline-flex items-center text-gray-700 hover:text-gray-900 cursor-pointer">
-                  Solution and Services
+                  Solution & Services
                   <svg
                     className="ml-1 w-4 h-4"
                     fill="none"
@@ -111,30 +124,30 @@ const Header = () => {
 
                 <div className="absolute left-0 md:mt-10 w-48 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
                   <div className="p-4 space-y-2">
-                    <a
-                      href="#"
+                    <Link
+                      to="/"
                       className="block text-gray-700 hover:text-indigo-600"
                     >
                       About Us
-                    </a>
-                    <a
-                      href="#"
+                    </Link>
+                    <Link
+                      to="/"
                       className="block text-gray-700 hover:text-indigo-600"
                     >
                       Careers
-                    </a>
-                    <a
-                      href="#"
+                    </Link>
+                    <Link
+                      to="/"
                       className="block text-gray-700 hover:text-indigo-600"
                     >
                       Blog
-                    </a>
-                    <a
-                      href="#"
+                    </Link>
+                    <Link
+                      to="/"
                       className="block text-gray-700 hover:text-indigo-600"
                     >
                       Contact
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </Link>
@@ -147,11 +160,11 @@ const Header = () => {
               </Link>
 
               {/* Contact */}
-              <Link to={"/contact"}>
+              {/* <Link to={"/contact"}>
                 <button className="inline-flex items-center text-gray-700 hover:text-gray-900 cursor-pointer">
                   Contact
                 </button>
-              </Link>
+              </Link> */}
 
               {/* Careers */}
               <Link to={"/careers"}>
@@ -170,14 +183,15 @@ const Header = () => {
           </div>
 
           {/* Right Section */}
-          <div className="flex items-center mt-2">
+          <div className="flex items-center justify-center">
             <Link to="/">
               <button
                 title="login"
                 type="button"
-                className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer"
+                className="flex gap-3 text-center justify-center text-white bg-primary focus:outline-none font-medium rounded-full text-sm md:px-5 md:py-3 p-2 m-auto cursor-pointer"
               >
                 Get Quote
+                <BsArrowUpRightCircleFill size={20} />
               </button>
             </Link>
           </div>
