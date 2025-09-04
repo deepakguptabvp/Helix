@@ -6,7 +6,7 @@ const GrowWithHelix = () => {
   return (
     <div className="w-full">
       {/* Top Section with BG + Overlay */}
-      <div className="relative bg-primary flex items-center min-h-[160px] md:min-h-[224px]">
+      <div className="relative bg-primary h-auto md:h-56 flex items-center">
         {/* Background Image */}
         <img
           src="../assets/GrowWithHelix.png"
@@ -15,10 +15,10 @@ const GrowWithHelix = () => {
         />
 
         {/* Content Overlay */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-8 text-white grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div className="relative z-10 container mx-auto px-4 md:px-16 py-8 text-white grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Heading */}
           <div>
-            <h1 className="text-lg sm:text-xl md:text-2xl font-light leading-snug">
+            <h1 className="text-xl md:text-2xl font-light leading-snug">
               Grow with Helix –{" "}
               <span className="font-semibold">Smarter IT Solutions</span>
             </h1>
@@ -26,7 +26,7 @@ const GrowWithHelix = () => {
 
           {/* Subtext */}
           <div>
-            <p className="text-xs sm:text-sm md:text-base">
+            <p className="text-sm md:text-base">
               Grow your business with Helix’s advanced IT solutions and
               services. We ensure the best results.
             </p>
@@ -35,24 +35,25 @@ const GrowWithHelix = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 -mt-8 md:-mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-8">
+      <div className=" container mx-auto px-4 md:px-16 -mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
         {cardData.map((item, index) => (
           <div
             key={index}
-            className="z-10 bg-white shadow-md rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center min-h-[260px]"
+            className="z-10 bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center"
           >
+
             {/* Lottie animation */}
             <Lottie
-              path={item.lottie}
+              path={item.lottie} 
               loop={false}
               autoplay
-              className="w-16 h-16 sm:w-20 sm:h-20 mb-4 rounded-lg"
+              className="w-20 h-20 mb-4 rounded-lg"
             />
 
-            <h3 className="font-semibold text-base sm:text-lg mb-2 text-primary">
+            <h3 className="font-semibold text-lg mb-2 text-primary">
               {item.label}
             </h3>
-            <p className="text-gray-600 text-xs sm:text-sm">{item.desc}</p>
+            <p className="text-gray-600 text-sm">{item.desc}</p>
           </div>
         ))}
       </div>
