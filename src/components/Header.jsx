@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="shadow-md sticky top-0 z-10 md:h-20 lg:h-18 p-1.5 bg-white w-full">
+    <nav className="sticky top-0 z-50 shadow md:h-20 lg:h-18 p-1.5 bg-white w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:p-2  w-full">
         <div className="flex flex-shrink-0 items-center justify-between w-full">
           {/* Logo Section */}

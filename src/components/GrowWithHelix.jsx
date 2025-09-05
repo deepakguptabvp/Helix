@@ -4,7 +4,7 @@ import cardData from "../data/GrowHelixData";
 
 const GrowWithHelix = () => {
   return (
-    <div className="w-full">
+    <div className="flex flex-col w-full py-10">
       {/* Top Section with BG + Overlay */}
       <div className="relative bg-primary h-auto md:h-56 flex items-center">
         {/* Background Image */}
@@ -15,7 +15,7 @@ const GrowWithHelix = () => {
         />
 
         {/* Content Overlay */}
-        <div className="relative z-10 container mx-auto px-4 md:px-16 py-8 text-white grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="relative container mx-auto px-4 md:px-16 py-8 text-white grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Heading */}
           <div>
             <h1 className="text-xl md:text-2xl font-light leading-snug">
@@ -41,11 +41,10 @@ const GrowWithHelix = () => {
             key={index}
             className="z-10 bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center"
           >
-
             {/* Lottie animation */}
             <Lottie
-              path={item.lottie} 
-              loop={false}
+              path={item.lottie}
+              loop
               autoplay
               className="w-20 h-20 mb-4 rounded-lg"
             />
